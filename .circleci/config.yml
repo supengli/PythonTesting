@@ -16,8 +16,7 @@ jobs:
         name: Run unit tests
         command: |
             python -m pip install .
-            python -m unittest ./test
-
+            python -m unittest test/test_fibonacci.py
 workflows:
   build:
     jobs:
